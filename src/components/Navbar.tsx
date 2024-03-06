@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <div className='sm:hidden w-[24px] flex flex-col gap-1 relative' onClick={() => setToggleMenu(!toggleMenu)}>
           <span className={`line w-[24px] bg-gradient-to-r from-cerulean to-verdigirls h-[3px] transition-all ease-out duration-700 ${toggleMenu && 'rotate-45 absolute top-[2px]'}`}></span>
-          <span className={`line w-[24px] bg-gradient-to-r from-cerulean to-verdigirls h-[3px] transition-all ease-out duration-500 ${toggleMenu && 'w-0'}`}></span>
+          <span className={`line  bg-gradient-to-r from-cerulean to-verdigirls h-[3px] transition-all ease-out duration-500 ${toggleMenu ? 'w-0' : 'w-[24px]'}`}></span>
           <span className={`line w-[24px] bg-gradient-to-r from-cerulean to-verdigirls h-[3px] transition-all ease-out duration-700 ${toggleMenu && '-rotate-45 absolute top-[2px]'}`}></span>
         </div>
 
