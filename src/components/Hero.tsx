@@ -5,7 +5,7 @@ const Hero = () => {
     <section id='hero' className='w-[90%] mx-auto p-5 grid grid-cols-2 gap-4'>
       <div className='col-span-1'>
         <div>
-          <h2>Hi, I'm <span>Sunny</span></h2>
+          <h2>Hi, I&prime;m <span>Sunny</span></h2>
           <p>A Full stack Developer</p>
         </div>
         <div>
