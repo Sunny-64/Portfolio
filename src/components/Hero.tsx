@@ -12,7 +12,7 @@ const Hero = () => {
           <p className='text-sm font-medium opacity-80'>A Full stack Developer</p>
         </div>
         <div className='mb-3 leading-8 md:pr-12'>
-          <p>As a full-stack web developer, I'm all about JavaScript, ReactJS, NextJS, and NodeJS. My goal? Mastering the craft and crafting immersive digital experiences.</p>
+          <p>As a full-stack web developer, I&prime;m all about JavaScript, ReactJS, NextJS, and NodeJS. My goal? Mastering the craft and crafting immersive digital experiences.</p>
         </div>
         <div className='flex gap-4 mt-8'>
           <button className='bg-gradient-to-br from-cerulean to-verdigirls px-4 py-2 rounded-md shadow-sm font-medium'>Resume</button>
