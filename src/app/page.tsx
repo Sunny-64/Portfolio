@@ -9,9 +9,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-        <Navbar />
-        <Hero />
-        {/* <About /> */}
+        <header className="min-h-[100vh]">
+          <Navbar />
+          <Hero />
+        </header>
+        <About />
         {/* <Timeline /> */}
         {/* <Projects /> */}
         {/* <Contact /> */}

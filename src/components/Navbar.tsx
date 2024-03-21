@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav className="w-[90%] py-3 px-5 mx-auto my-5 rounded-md flex justify-between shadow-md items-center realtive ">
       <div className='sm:flex gap-4 hidden'>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Timeline</a>
+        <a href="" className='font-medium'>About</a>
+        <a href="" className='font-medium'>Projects</a>
+        <a href="" className='font-medium'>Timeline</a>
       </div>
       <p className="sm:hidden text-xl font-bold bg-gradient-to-r from-verdigirls to-cerulean text-transparent bg-clip-text">B Sunny</p>
 
