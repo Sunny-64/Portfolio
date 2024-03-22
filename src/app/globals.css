@@ -20,6 +20,9 @@ body {
     background-color: var(--rich-black);
     color: var(--cornsilk);
     min-width: 360px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 380px;
 }
 
 nav {
