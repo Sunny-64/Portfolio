@@ -21,9 +21,9 @@ const Navbar = () => {
 
       <div className='flex gap-4 '>
         <div className='flex gap-4 items-center'>
-          <a href="" className='hidden border border-verdigirls p-2 rounded-full sm:flex items-center justify-center'><FaLinkedin size={20} /></a>
-          <a href="" className='hidden border border-verdigirls p-2 rounded-full sm:flex items-center justify-center'><FaTwitter size={20} /></a>
-          <a href="" className='hidden border border-verdigirls p-2 rounded-full sm:flex items-center justify-center'><FaGithub size={20} /></a>
+          <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaLinkedin size={20} /></a>
+          <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaTwitter size={20} /></a>
+          <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaGithub size={20} /></a>
         </div>
 
         <a href='#contact' className='hidden sm:flex gradient-bordered-btn px-4 py-1'>Contact</a>

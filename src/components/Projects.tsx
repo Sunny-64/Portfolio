@@ -25,7 +25,7 @@ const Projects = () => {
                 <p className="text-3xl font-semibold mb-3">{item?.name}</p>
                 <p className='mb-3 leading-8'>description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quo provident omnis accusantium a corrupti similique fuga commodi velit maxime.</p>
                 <div className='flex justify-between'>
-                  <a className='rounded-full border-[2px] border-verdigirls px-4 py-1 flex justify-center items-center'>Demo</a>
+                  <a className='rounded-full border-[2px] border-verdigirls px-4 py-1 flex justify-center items-center hvr-radial-in cursor-pointer'>Demo</a>
                   <a href=""><FaGithub size={30}/> </a>
                 </div>
               </div>
@@ -38,7 +38,7 @@ const Projects = () => {
                   <p className="text-3xl font-semibold mb-3">{item?.name}</p>
                   <p className='mb-3 leading-8'>description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quo provident omnis accusantium a corrupti similique fuga commodi velit maxime.</p>
                   <div className='flex justify-between'>
-                    <button className='rounded-full border-[2px] border-verdigirls px-4 py-1 flex justify-center items-center'>Demo</button>
+                    <button className='rounded-full border-[2px] border-verdigirls px-4 py-1 flex justify-center items-center cursor-pointer hvr-radial-in'>Demo</button>
                     <a href=""><FaGithub size={30}/></a>
                   </div>
                 </div>

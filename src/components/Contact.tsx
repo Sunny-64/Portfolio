@@ -19,9 +19,9 @@ const Contact = () => {
 
         <div className='md:w-[85%] justify-self-end mt-8 md:mt-0'>
             <div className='flex gap-4'>
-                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls flex justify-center items-center' href=""><FaGithub size={30}/></a>
-                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls flex justify-center items-center' href=""><FaLinkedin size={30}/></a>
-                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls flex justify-center items-center' href=""><FaTwitter size={30}/></a>
+                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center' href=""><FaGithub size={30}/></a>
+                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center' href=""><FaLinkedin size={30}/></a>
+                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center' href=""><FaTwitter size={30}/></a>
             </div>
             <div className='flex flex-col gap-2 mt-8'>
                 <p>sunny6464n@gmail.com</p>

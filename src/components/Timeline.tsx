@@ -12,7 +12,7 @@ const RenderTimelineData = ({data} : {data : any}) => {
                 <div className="flex flex-col w-full rounded-lg shadow border-[3px] border-verdigirls px-2 sm:px-4 py-5">
                   <div className="text-cornsilk mb-2">
                     <div className="font-bold text-md">{item?.graduatedFrom ?? item?.company}</div>
-                    <div className='font-medium text-gray-300 text-sm tracking-wider'>{item?.course}</div>
+                    <div className='font-medium text-gray-300 text-sm tracking-wider'>{item?.course ?? item?.experienceType}</div>
                   </div>
                   <div className="text-cornsilk">{item?.description}</div>
                 </div>
@@ -43,8 +43,8 @@ const RenderTimelineData = ({data} : {data : any}) => {
               <div className="w-2/5 px-2 py-10">
                 <div className="flex flex-col w-full rounded-lg shadow border-[3px] border-verdigirls px-4 py-5">
                   <div className="text-cornsilk mb-2">
-                    <div className="font-bold text-md">{item?.graduatedFrom}</div>
-                    <div className='font-medium text-gray-300 text-sm tracking-wider'>{item?.course}</div>
+                    <div className="font-bold text-md">{item?.graduatedFrom ?? item?.company}</div>
+                    <div className='font-medium text-gray-300 text-sm tracking-wider'>{item?.course ?? item?.experienceType}</div>
                   </div>
                   <div className="text-cornsilk">{item?.description}</div>
                 </div>

@@ -4,7 +4,7 @@ export const EDUCATION = [
         endDate: 2026,
         education: 'BTech',
         course: 'Computer Science & Engineering',
-        description: 'Pursuing Btech....',
+        description: `I'm currently a Second year Student pursuing BTech in correspondence. I'm gaining knowledge and experience throughout my graduation.`,
         graduatedFrom: 'St Solider Institute of Engineering and Technology',
         grade: '7.5'
     },
@@ -13,7 +13,7 @@ export const EDUCATION = [
         endDate: 2023,
         education: 'Diploma',
         course: 'Computer Science & Engineering',
-        description: 'Pursuing Diploma....',
+        description: 'I Completed my Diploma in CSE where I learned everything about Tech from scratch with zero knowledge I enrolled into Diploma. Throughout the three years of my journey in Diploma I explored Hackathons, Devfests and participated in a few tech fests.',
         graduatedFrom: 'Mehr Chand Polytechnic College',
         grade: '7.5'
     },
@@ -22,7 +22,7 @@ export const EDUCATION = [
         endDate: 2020,
         education: 'Matriculation',
         course: null,
-        description: 'Completed Matriculation',
+        description: 'I completed My 10th class with outstanding A+ grade.',
         graduatedFrom: 'A.P.S Public Senior Secondary School',
         grade: 'A+'
     },
@@ -34,7 +34,7 @@ export const EXPERIENCE = [
         startDate: 'April 2023',
         endDate: 'Nov 2023',
         experienceType: 'Internship',
-        description: 'explantion',
+        description: 'During my Internship I learned Nodejs and Blockchain and implemented them in several projects. I developed various skills during this internship and developed applications from scratch to hosting and deployment. I practiced React-Native as well during the end of my Internship. ',
         profile: 'Nodejs + Blockchain Developer',
     },
     {
@@ -42,7 +42,7 @@ export const EXPERIENCE = [
         startDate: 'Aug 2022',
         endDate: 'Feb 2023',
         experienceType: 'Training',
-        description: 'explantion',
+        description: 'During this Training Program of six months I learned MERN stack and worked on a capstone project. I gained knowledge of Javascript thoroughly and leanred frameworks like react-native and expressjs.',
         profile: 'Full Stack Developer'
     },
     {
@@ -50,7 +50,7 @@ export const EXPERIENCE = [
         startDate: 'July 2022',
         endDate: 'Aug 2022',
         experienceType: 'Industrial Training',
-        description: 'explantion',
+        description: 'In this training program of 6 weeks which is mandatory in the 3rd year of the Diploma I learned about php and developed a minor project using php for college submissions.',
         profile: 'Core PHP'
     },
 ];
