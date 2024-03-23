@@ -9,13 +9,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-        <header className="">
+        <header className="md:min-h-screen">
           <Navbar />
           <Hero />
         </header>
         <About />
         <Timeline />
-        {/* <Projects /> */}
+        <Projects />
         {/* <Contact /> */}
     </div>
   );

@@ -1,62 +1,6 @@
 "use client";
 import React, { useState } from 'react'
-
-const EDUCATION = [
-  {
-    startDate: 2023,
-    endDate: 2026,
-    education: 'BTech',
-    course: 'Computer Science & Engineering',
-    description: 'Pursuing Btech....',
-    graduatedFrom: 'St Solider Institute of Engineering and Technology',
-    grade: '7.5'
-  },
-  {
-    startDate: 2020,
-    endDate: 2023,
-    education: 'Diploma',
-    course: 'Computer Science & Engineering',
-    description: 'Pursuing Diploma....',
-    graduatedFrom: 'Mehr Chand Polytechnic College',
-    grade: '7.5'
-  },
-  {
-    startDate: 2019,
-    endDate: 2020,
-    education: 'Matriculation',
-    course: null,
-    description: 'Completed Matriculation',
-    graduatedFrom: 'A.P.S Public Senior Secondary School',
-    grade: 'A+'
-  },
-];
-
-const EXPERIENCE = [
-  {
-    company: 'Qservices',
-    startDate: 'April 2023',
-    endDate: 'Nov 2023',
-    experienceType: 'Internship',
-    description: 'explantion',
-    profile: 'Nodejs + Blockchain Developer',
-  },
-  {
-    company: 'O7 Services',
-    startDate: 'Aug 2022',
-    endDate: 'Feb 2023',
-    experienceType: 'Training',
-    description: 'explantion',
-    profile: 'Full Stack Developer'
-  },
-  {
-    company: 'O7 Services',
-    startDate: 'July 2022',
-    endDate: 'Aug 2022',
-    experienceType: 'Industrial Training',
-    description: 'explantion',
-    profile: 'Core PHP'
-  },
-];
+import { EDUCATION, EXPERIENCE } from '@/constants/constants';
 
 const RenderTimelineData = ({data} : {data : any}) => {
   return (
@@ -115,7 +59,7 @@ const RenderTimelineData = ({data} : {data : any}) => {
 const Timeline = () => {
   const [activeButton, setActiveButton] = useState<string>('EDUCATION');
   return (
-    <section id='timeline' className='px-2 sm:p-5'>
+    <section id='timeline' className='px-2 sm:p-5 mt-16 min-h-screen'>
       <div className='flex justify-center gap-6 mb-16'>
         <button
           className={`text-lg w-32 ${activeButton === 'EDUCATION' ? 'bg-gradient-to-br from-verdigirls from-30% to-cerulean to-70%' : 'border-[2px] border-verdigirls'} px-5 py-2 rounded-md shadow-sm`}
