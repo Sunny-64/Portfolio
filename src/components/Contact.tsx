@@ -11,7 +11,7 @@ const Contact = () => {
     <section id='contact' className='p-5 min-h-screen'>
       <p className='text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-cerulean to-verdigirls text-transparent bg-clip-text'>Contact</p>
       <div className='md:grid md:grid-cols-2 mt-4 md:mt-12'>
-        <form action="" className='md:w-full flex flex-col gap-4 md:p-2 lg:p-5'>
+        <form action="" className='w-full lg:w-[80%] flex flex-col gap-4 md:p-2 lg:p-5'>
           <input className='py-3 px-4 rounded-md focus:outline-none' type="text" name='fullName' placeholder='Full Name' />
           <textarea className='py-3 px-4 rounded-md focus:outline-none' name="message" id="message" cols={30} rows={8} placeholder='Message...'></textarea>
           <button type="submit" className='bg-gradient-to-r from-cerulean to-verdigirls font-medium w-32 py-2 rounded-sm'>Send</button>
@@ -29,7 +29,7 @@ const Contact = () => {
             </div>
             <div className='mt-8'>
               <p className='font-bold text-2xl'>News Letter</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, error reiciendis. Sed molestias recusandae ullam?</p>
+              <p className='pr-4'>I will be posting blogs on Technologies Subscribe to my News Letter if you want to Stay updated when I post a blog.</p>
               <div className='mt-4 w-full flex '>
                 <input type="text" name='newsLetter' placeholder='Enter your Email' className='py-3 px-4 rounded-l-sm focus:outline-none w-[80%]' />
                 <button className='bg-gradient-to-r from-cerulean to-verdigirls py-3 px-2 rounded-r-sm'>Subscribe</button>

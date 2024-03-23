@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from 'react'
 import { EDUCATION, EXPERIENCE } from '@/constants/constants';
+import { IEducation, IExperience } from '@/types';
 
 const RenderTimelineData = ({data} : {data : any}) => {
   return (
-      data?.map((item:any, index:number) => (
+      data?.map((item:IEducation & IExperience, index:number) => (
         <div key={index} className="flex flex-row w-full">
           {index % 2 === 0 ? (
             <>
@@ -62,13 +63,13 @@ const Timeline = () => {
     <section id='timeline' className='px-2 sm:p-5 min-h-screen'>
       <div className='flex justify-center gap-6 mb-16'>
         <button
-          className={`text-lg w-32 ${activeButton === 'EDUCATION' ? 'bg-gradient-to-br from-verdigirls from-30% to-cerulean to-70%' : 'border-[2px] border-verdigirls'} px-5 py-2 rounded-md shadow-sm`}
+          className={`text-lg w-32  ${activeButton === 'EDUCATION' ? 'bg-gradient-to-br from-verdigirls from-30% to-cerulean to-70%' : 'hvr-bounce-to-right border-[2px] border-verdigirls'} px-5 py-2 rounded-sm shadow-sm`}
           onClick={() => setActiveButton('EDUCATION')}
         >
           Education
         </button>
         <button
-          className={`text-lg w-32 ${activeButton === 'EXPERIENCE' ? 'bg-gradient-to-br from-verdigirls from-30% to-cerulean to-70%' : 'border-[2px] border-verdigirls'} px-5 py-2 rounded-md shadow-sm`}
+          className={`text-lg w-32 ${activeButton === 'EXPERIENCE' ? 'bg-gradient-to-br from-verdigirls from-30% to-cerulean to-70%' : 'border-[2px] border-verdigirls hvr-bounce-to-left '} px-5 py-2 rounded-sm shadow-sm`}
           onClick={() => setActiveButton('EXPERIENCE')}
         >
           Experience

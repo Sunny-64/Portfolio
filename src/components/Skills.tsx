@@ -4,7 +4,9 @@ import skillsPng from './../../assets/skills.png';
 
 const skills = () => {
   return (
-    <Image height={650} width={650} src={skillsPng} alt='skills' />
+    <div> 
+      hell oworld
+    </div>
   )
 }
 

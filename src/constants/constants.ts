@@ -1,4 +1,6 @@
-export const EDUCATION = [
+import { IEducation, IExperience, IProject } from '@/types';
+
+export const EDUCATION : IEducation[] = [
     {
         startDate: 2023,
         endDate: 2026,
@@ -28,7 +30,7 @@ export const EDUCATION = [
     },
 ];
 
-export const EXPERIENCE = [
+export const EXPERIENCE : IExperience [] = [
     {
         company: 'Qservices',
         startDate: 'April 2023',
@@ -55,7 +57,7 @@ export const EXPERIENCE = [
     },
 ];
 
-export const PROJECTS = [
+export const PROJECTS : IProject [] = [
     {
         name : 'NFT Marketplace', 
         imageUrl : 'nil', 
