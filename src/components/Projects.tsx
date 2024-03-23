@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
+import {
+  FaGithub,
+} from 'react-icons/fa'
+
 import zeroPng from './../../assets/zero.jpg'
 import { PROJECTS } from '@/constants/constants';
 
@@ -22,7 +26,7 @@ const Projects = () => {
                 <p className='mb-3 leading-8'>description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quo provident omnis accusantium a corrupti similique fuga commodi velit maxime.</p>
                 <div className='flex justify-between'>
                   <a className='rounded-full border-[2px] border-verdigirls px-4 py-1 flex justify-center items-center'>Demo</a>
-                  <a href="">Github</a>
+                  <a href=""><FaGithub size={30}/> </a>
                 </div>
               </div>
             </div>
@@ -35,7 +39,7 @@ const Projects = () => {
                   <p className='mb-3 leading-8'>description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quo provident omnis accusantium a corrupti similique fuga commodi velit maxime.</p>
                   <div className='flex justify-between'>
                     <button className='rounded-full border-[2px] border-verdigirls px-4 py-1 flex justify-center items-center'>Demo</button>
-                    <a href="">Github</a>
+                    <a href=""><FaGithub size={30}/></a>
                   </div>
                 </div>
                 <div className='sm:col-span-1'>

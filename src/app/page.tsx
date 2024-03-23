@@ -16,7 +16,7 @@ export default function Home() {
         <About />
         <Timeline />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
     </div>
   );
 }

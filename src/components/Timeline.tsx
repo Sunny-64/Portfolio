@@ -59,7 +59,7 @@ const RenderTimelineData = ({data} : {data : any}) => {
 const Timeline = () => {
   const [activeButton, setActiveButton] = useState<string>('EDUCATION');
   return (
-    <section id='timeline' className='px-2 sm:p-5 mt-16 min-h-screen'>
+    <section id='timeline' className='px-2 sm:p-5 min-h-screen'>
       <div className='flex justify-center gap-6 mb-16'>
         <button
           className={`text-lg w-32 ${activeButton === 'EDUCATION' ? 'bg-gradient-to-br from-verdigirls from-30% to-cerulean to-70%' : 'border-[2px] border-verdigirls'} px-5 py-2 rounded-md shadow-sm`}
