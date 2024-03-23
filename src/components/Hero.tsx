@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       <div className='col-span-1 place-self-end xl:mt-12 my-8 md:mt-0'>
         {/* <Skills /> */}
-        <Image height={600} width={600} src={skillsPng} alt='skills' />
+        <Image className='md:h-[full] w-full object-cover ' src={skillsPng} priority alt='skills' />
       </div>
     </section>
   )
