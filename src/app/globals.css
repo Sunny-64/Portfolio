@@ -33,13 +33,6 @@ nav {
     background-color: rgba(112, 169, 161, 0.126);
 }
 
-.gradient-bordered-btn {
-    border-color: var(--verdigirls);
-    border-width: 2px;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
 input,
 textarea {
     background-color: #40798d4d;

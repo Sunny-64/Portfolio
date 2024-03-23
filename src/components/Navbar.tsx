@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaGithub size={20} /></a>
         </div>
 
-        <a href='#contact' className='hidden sm:flex gradient-bordered-btn px-4 py-1'>Contact</a>
+        <a href='#contact' className='hidden sm:flex border-[2px] border-verdigirls rounded-md hvr-bounce-to-left px-4 py-1'>Contact</a>
 
         <div className='sm:hidden w-[24px] flex flex-col gap-1 relative' onClick={() => setToggleMenu(!toggleMenu)}>
           <span className={`line w-[24px] bg-gradient-to-r from-cerulean to-verdigirls h-[3px] transition-all ease-out duration-700 ${toggleMenu && 'rotate-45 absolute top-[2px]'}`}></span>
@@ -39,7 +39,7 @@ const Navbar = () => {
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#timeline">Timeline</a>
-        <a href='#contact'  className='sm:flex gradient-bordered-btn px-4 py-1'>Contact</a>
+        <a href='#contact'  className='sm:flex border-[2px] border-verdigirls rounded-md px-4 py-1 hvr-bounce-to-left'>Contact</a>
       </div>
     </nav>
   )
