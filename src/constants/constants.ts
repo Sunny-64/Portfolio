@@ -6,7 +6,7 @@ export const EDUCATION : IEducation[] = [
         endDate: 2026,
         education: 'BTech',
         course: 'Computer Science & Engineering',
-        description: `I'm currently a Second year Student pursuing BTech in correspondence. I'm gaining knowledge and experience throughout my graduation.`,
+        description: `I am currently a Second year Student pursuing BTech in correspondence. I'm gaining knowledge and experience throughout my graduation.`,
         graduatedFrom: 'St Solider Institute of Engineering and Technology',
         grade: '7.5'
     },

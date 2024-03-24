@@ -14,13 +14,13 @@ const About = () => {
           </div>
           <div className='lg:col-span-2 xl:px-20 py-8 md:py-6 leading-10 text-lg'>
             <p className='text-justify'>
-              Hey there! I'm B Sunny, a second-year student studying Computer Science and Engineering. Before this, I did a diploma in the same field and landed an internship at Qservices, where I worked with Node.js and Blockchain.
+              Hey there! I am B Sunny, a second-year student studying Computer Science and Engineering. Before this, I did a diploma in the same field and landed an internship at Qservices, where I worked with Node.js and Blockchain.
 
-              I'm really into web stuff, you know? Recently, I've been learning about web3 and getting better at full-stack development. Since I'm studying remotely, I'm always looking for ways to get hands-on experience.
+              I am really into web stuff, you know? Recently, I&prime;ve been learning about web3 and getting better at full-stack development. Since I&prime;m studying remotely, I&prime;m always looking for ways to get hands-on experience.
 
-              I'm a full-stack developer, which means I work on both front and back ends of websites. I love learning about new tech stuff. When I'm not coding, I enjoy reading or playing chess to keep my brain active.
+              I am a full-stack developer, which means I work on both front and back ends of websites. I love learning about new tech stuff. When I&prime;m not coding, I enjoy reading or playing chess to keep my brain active.
 
-              And I'm a big fan of traveling, especially to the mountains. There's just something about them that I find irresistible!
+              And I am a big fan of traveling, especially to the mountains. There&prime;s just something about them that I find irresistible!
               </p>
           </div>
         </div>
