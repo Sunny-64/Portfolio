@@ -60,7 +60,7 @@ export const EXPERIENCE : IExperience [] = [
 export const PROJECTS : IProject [] = [
     {
         name : 'NFT Marketplace', 
-        imageUrl : '/assets/NFT-marketplace.png', 
+        imageUrl : '/assets/nft-marketplace.png', 
         description : 'NFT Marketplace is a platform where you can mint your own NFT at efficient gas price. You can Sell or Auction the NFT. This project uses Metamask for the transactions.', 
         url : 'https://nft-marketplace-ashy-xi.vercel.app/', 
         github : 'https://github.com/Sunny-64/NFT-marketplace', 
