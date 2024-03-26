@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
 
-import computerPng from './../../assets/computer.png';
-
 const About = () => {
   return (
     <section id='about' className='min-h-screen py-5 flex items-center'>
@@ -10,7 +8,7 @@ const About = () => {
         <p className='text-center text-4xl md:text-6xl font-bold bg-gradient-to-r from-cornsilk from-30% to-verdigirls to-60% text-transparent bg-clip-text mb-6'>About Me</p>
         <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
           <div className='w-full lg:col-span-1 flex justify-center md:items-center lg:items-start'>
-            <Image src={computerPng} className='h-[210px] w-[200px] md:w-[350px] md:h-[400px] object-cover' alt='computer' />
+            <Image height={500} width={500} src={'/assets/computer.png'} className='h-[210px] w-[200px] md:w-[350px] md:h-[400px] object-cover' alt='computer' />
           </div>
           <div className='lg:col-span-2 xl:px-20 py-8 md:py-6 leading-9 text-lg'>
             <p className='text-justify'>

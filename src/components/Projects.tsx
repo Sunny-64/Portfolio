@@ -4,7 +4,6 @@ import {
   FaGithub,
 } from 'react-icons/fa'
 
-import zeroPng from './../../assets/zero.jpg'
 import { PROJECTS } from '@/constants/constants';
 import { IProject } from '@/types';
 
@@ -20,7 +19,7 @@ const Projects = () => {
           index % 2 === 0 ? (
             <div key={index} className="md:w-3/4 xl:w-1/2 border-[3px] border-verdigirls sm:grid sm:grid-cols-3 rounded-lg">
               <div className='md:col-span-1'>
-                <Image className='h-full w-full object-cover rounded-l-lg' src={item?.imageUrl} alt='img' />
+                <Image height={500} width={500} className='h-full w-full object-cover rounded-l-lg' src={item?.imageUrl} alt='img' />
               </div>
               <div className='col-span-2 p-5'>
                 <p className="text-3xl font-semibold mb-3">{item?.name}</p>
@@ -47,7 +46,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className='sm:col-span-1'>
-                  <Image className='h-full w-full object-cover rounded-r-lg' src={item?.imageUrl} alt='img' />
+                  <Image height={500} width={500} className='h-full w-full object-cover rounded-r-lg' src={item?.imageUrl} alt='img' />
                 </div>
               </div>
             )

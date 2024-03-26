@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image';
-import skillsPng from './../../assets/skills.png';
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
       </div>
       <div className='col-span-1 place-self-end xl:mt-12 my-8 md:mt-0'>
         {/* <Skills /> */}
-        <Image className='md:h-[full] w-full object-cover ' src={skillsPng} priority alt='skills' />
+        <Image height={500} width={400} className='md:h-[full] w-full object-cover ' src={'/assets/skills.png'} priority alt='skills' />
       </div>
     </section>
   )
