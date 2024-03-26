@@ -12,7 +12,7 @@ const About = () => {
           <div className='w-full lg:col-span-1 flex justify-center md:items-center lg:items-start'>
             <Image src={computerPng} className='h-[210px] w-[200px] md:w-[350px] md:h-[400px] object-cover' alt='computer' />
           </div>
-          <div className='lg:col-span-2 xl:px-20 py-8 md:py-6 leading-10 text-lg'>
+          <div className='lg:col-span-2 xl:px-20 py-8 md:py-6 leading-9 text-lg'>
             <p className='text-justify'>
               Hey there! I am B Sunny, a second-year student studying Computer Science and Engineering. Before this, I did a diploma in the same field and landed an internship at Qservices, where I worked with Node.js and Blockchain.
 

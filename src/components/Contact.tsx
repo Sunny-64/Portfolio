@@ -8,7 +8,7 @@ import {
 
 const Contact = () => {
   return (
-    <section id='contact' className='p-5 min-h-screen'>
+    <section id='contact' className='p-5'>
       <p className='text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-cerulean to-verdigirls text-transparent bg-clip-text'>Contact</p>
       <div className='md:grid md:grid-cols-2 mt-4 md:mt-12'>
         <form action="" className='w-full lg:w-[80%] flex flex-col gap-4 md:p-2 lg:p-5'>

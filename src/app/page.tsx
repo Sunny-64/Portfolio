@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-        <header className="md:min-h-screen">
+        <header className="">
           <Navbar />
           <Hero />
         </header>

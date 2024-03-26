@@ -11,7 +11,7 @@ import { IProject } from '@/types';
 const Projects = () => {
 
   return (
-    <section id='projects' className='bg-gradient-to-br from-[rgba(11,32,39,0.4)] to-[rgba(64,121,140,0.4)] min-h-screen p-5 mb-8'>
+    <section id='projects' className='bg-gradient-to-br from-[rgba(11,32,39,0.4)] to-[rgba(64,121,140,0.4)] p-5 mb-8 pb-12'>
       <p className='text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-cerulean to-verdigirls text-transparent bg-clip-text py-3'>Projects</p>
 
       <div className="projects flex flex-col gap-8 items-center mt-8">
