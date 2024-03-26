@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface IEducation {
     startDate : number;
     endDate : number; 
@@ -19,7 +21,7 @@ export interface IExperience {
 
 export interface IProject {
     name : string; 
-    imageUrl : string; 
+    imageUrl : StaticImageData | string; 
     description : string; 
     url : string; 
     github : string; 

@@ -5,6 +5,14 @@ import {
   FaTwitter,
 } from 'react-icons/fa'
 
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  TWITTER_URL,
+  MOBILE,
+  EMAIL
+} from '@/constants/contact'
+
 
 const Contact = () => {
   return (
@@ -18,23 +26,23 @@ const Contact = () => {
         </form>
 
         <div className='md:w-[85%] justify-self-end mt-8 md:mt-0'>
-            <div className='flex gap-4'>
-                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center' href=""><FaGithub size={30}/></a>
-                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center' href=""><FaLinkedin size={30}/></a>
-                <a className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center' href=""><FaTwitter size={30}/></a>
+          <div className='flex gap-4'>
+            <a href={GITHUB_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaGithub size={30} /></a>
+            <a href={LINKEDIN_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaLinkedin size={30} /></a>
+            <a href={TWITTER_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaTwitter size={30} /></a>
+          </div>
+          <div className='flex flex-col gap-2 mt-8'>
+            <p>{EMAIL}</p>
+            <p>{MOBILE}</p>
+          </div>
+          <div className='mt-8'>
+            <p className='font-bold text-2xl'>News Letter</p>
+            <p className='pr-4'>I will be posting blogs on Technologies Subscribe to my News Letter if you want to Stay updated when I post a blog.</p>
+            <div className='mt-4 w-full flex '>
+              <input type="text" name='newsLetter' placeholder='Enter your Email' className='py-3 px-4 rounded-l-sm focus:outline-none w-[80%]' />
+              <button className='bg-gradient-to-r from-cerulean to-verdigirls py-3 px-2 rounded-r-sm'>Subscribe</button>
             </div>
-            <div className='flex flex-col gap-2 mt-8'>
-                <p>sunny6464n@gmail.com</p>
-                <p>+91 7973699425</p>
-            </div>
-            <div className='mt-8'>
-              <p className='font-bold text-2xl'>News Letter</p>
-              <p className='pr-4'>I will be posting blogs on Technologies Subscribe to my News Letter if you want to Stay updated when I post a blog.</p>
-              <div className='mt-4 w-full flex '>
-                <input type="text" name='newsLetter' placeholder='Enter your Email' className='py-3 px-4 rounded-l-sm focus:outline-none w-[80%]' />
-                <button className='bg-gradient-to-r from-cerulean to-verdigirls py-3 px-2 rounded-r-sm'>Subscribe</button>
-              </div>
-            </div>
+          </div>
         </div>
 
       </div>

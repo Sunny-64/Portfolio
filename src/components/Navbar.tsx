@@ -7,6 +7,12 @@ import {
   FaTwitter,
 } from 'react-icons/fa'
 
+import {
+  GITHUB_URL, 
+  LINKEDIN_URL, 
+  TWITTER_URL,
+} from '@/constants/contact'; 
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
@@ -21,9 +27,9 @@ const Navbar = () => {
 
       <div className='flex gap-4 '>
         <div className='flex gap-4 items-center'>
-          <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaLinkedin size={20} /></a>
-          <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaTwitter size={20} /></a>
-          <a href="" className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaGithub size={20} /></a>
+          <a href={LINKEDIN_URL} target='_blank' className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaLinkedin size={20} /></a>
+          <a href={TWITTER_URL} target='_blank' className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaTwitter size={20} /></a>
+          <a href={GITHUB_URL} target='_blank' className='hidden border-[2px] border-verdigirls p-2 rounded-full sm:flex items-center justify-center hvr-radial-in'><FaGithub size={20} /></a>
         </div>
 
         <a href='#contact' className='hidden sm:flex border-[2px] border-verdigirls rounded-md hvr-bounce-to-left px-4 py-1'>Contact</a>

@@ -1,4 +1,7 @@
 import { IEducation, IExperience, IProject } from '@/types';
+import newsAppPng from '../../assets/news-app.png'
+import onlineJournalPng from '../../assets/online-journal.png'
+import nftMarketplacePng from '../../assets/NFT-marketplace.png'
 
 export const EDUCATION : IEducation[] = [
     {
@@ -60,26 +63,26 @@ export const EXPERIENCE : IExperience [] = [
 export const PROJECTS : IProject [] = [
     {
         name : 'NFT Marketplace', 
-        imageUrl : 'nil', 
-        description : 'describe the project', 
-        url : 'url', 
-        github : 'github link', 
+        imageUrl : nftMarketplacePng, 
+        description : 'NFT Marketplace is a platform where you can mint your own NFT at efficient gas price. You can Sell or Auction the NFT. This project uses Metamask for the transactions.', 
+        url : 'https://nft-marketplace-ashy-xi.vercel.app/', 
+        github : 'https://github.com/Sunny-64/NFT-marketplace', 
         techStack : 'Reactjs, Nodejs, MongoDB, Solidity, Ethereum, Firebase'
     }, 
     {
         name : 'News App', 
-        imageUrl : 'nil', 
-        description : 'describe the project', 
-        url : 'url', 
-        github : 'github link', 
+        imageUrl : newsAppPng, 
+        description : 'News App uses a third party API to show the News of various categories and countries. It shows the country specific news with country specific language. The project has a really nice UI with the support of dark mode.', 
+        url : 'https://news-app-1vy4.vercel.app/', 
+        github : 'https://github.com/Sunny-64/News-App', 
         techStack : 'Reactjs, Nodejs, Tailwind CSS'
     }, 
     {
-        name : 'Journal Writing', 
-        imageUrl : 'nil', 
-        description : 'describe the project', 
-        url : 'url', 
-        github : 'github link', 
+        name : 'Online Journal', 
+        imageUrl : onlineJournalPng, 
+        description : 'Online journal is a writing specific platform where users can write their thoughts and share it to others. Users can share their research to other people and journal their entire day.', 
+        url : 'https://writejournal.000webhostapp.com/', 
+        github : 'https://github.com/Sunny-64/Journal-Project-using-PHP', 
         techStack : 'Php, html, css, js'
     }, 
     // {
