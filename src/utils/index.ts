@@ -7,11 +7,3 @@ export const paginationList = (total:number, numberOfItemsToRender : number = PA
     }
     return list; 
 }
-
-export const generatePlaceHolders = (total:number, Element : React.JSX.Element) => {
-    const list = []; 
-    for(let i = 0; i<total; i++){
-        list.push(Element); 
-    }
-    return list; 
-}
