@@ -10,8 +10,8 @@ const About = () => {
           <div className='w-full lg:col-span-1 flex justify-center md:items-center lg:items-start'>
             <Image height={500} width={500} src={'/assets/computer.png'} className='h-[210px] w-[200px] md:w-[350px] md:h-[400px] object-cover' alt='computer' />
           </div>
-          <div className='lg:col-span-2 xl:px-20 py-8 md:py-6 leading-9 text-lg'>
-            <p className='text-justify'>
+          <div className='lg:col-span-2 xl:px-20 py-8 md:py-6'>
+            <p className='text-justify hyphens-auto leading-7'>
               Hey there! I am B Sunny, a second-year student studying Computer Science and Engineering. Before this, I did a diploma in the same field and landed an internship at Qservices, where I worked with Node.js and Blockchain.
 
               I am really into web stuff, you know? Recently, I&prime;ve been learning about web3 and getting better at full-stack development. Since I&prime;m studying remotely, I&prime;m always looking for ways to get hands-on experience.
