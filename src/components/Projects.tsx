@@ -1,13 +1,33 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import {
   FaGithub,
 } from 'react-icons/fa'
 
 import { PROJECTS } from '@/constants/constants';
 import { IProject } from '@/types';
+import { generatePlaceHolders, PAGINATION_ITEMS_PER_PAGE, paginationList } from '@/utils';
+
+const PlaceHolderItem = () => {
+  return (
+      <div className='md:w-3/4 xl:w-1/2 min-h-[300px]'></div>
+  )
+}
 
 const Projects = () => {
+  const [sliceTracker, setSliceTracker] = useState<number []>([0, 3])
+  const [projectsList, setProjectsList] = useState<IProject[]>(PROJECTS.slice(sliceTracker[0],sliceTracker[1])); 
+  const [activePage, setActivePage] = useState<number>(1)
+
+  useEffect(() => {
+    setProjectsList(() => PROJECTS.slice(sliceTracker[0], sliceTracker[1]))
+  }, sliceTracker)
+
+  const handleUpdatePagination = (val:number) => {
+      setSliceTracker(() => [PAGINATION_ITEMS_PER_PAGE * val, PAGINATION_ITEMS_PER_PAGE * (val + 1) > PROJECTS.length ? PROJECTS.length : PAGINATION_ITEMS_PER_PAGE * (val + 1)]); 
+      setActivePage(val); 
+  } 
 
   return (
     <section id='projects' className='bg-gradient-to-br from-[rgba(11,32,39,0.4)] to-[rgba(64,121,140,0.4)] p-5 mb-8 pb-12'>
@@ -15,9 +35,9 @@ const Projects = () => {
 
       <div className="projects flex flex-col gap-8 items-center mt-8">
 
-        {PROJECTS?.map((item: IProject, index: number) => (
+        {projectsList?.map((item: IProject, index: number) => (
           index % 2 === 0 ? (
-            <div key={index} className="md:w-3/4 xl:w-1/2 border-[3px] border-verdigirls sm:grid sm:grid-cols-3 rounded-lg">
+            <div key={index} className="md:w-3/4 xl:w-1/2 border-[3px] border-verdigirls sm:grid sm:grid-cols-3 rounded-lg min-h-[300px] transition-all duration-1000 ease-in-out">
               <div className='md:col-span-1'>
                 <Image height={500} width={500} className='h-full w-full object-cover rounded-l-lg' src={item?.imageUrl} alt='img' />
               </div>
@@ -34,7 +54,7 @@ const Projects = () => {
           )
             :
             (
-              <div key={index} className="md:w-3/4 xl:w-1/2 border-[3px] flex flex-col-reverse border-verdigirls sm:grid sm:grid-cols-3 rounded-lg">
+              <div key={index} className="md:w-3/4 xl:w-1/2 border-[3px] flex flex-col-reverse border-verdigirls sm:grid sm:grid-cols-3 rounded-lg min-h-[300px]">
                 <div className='sm:col-span-2 p-5'>
                   <p className="text-3xl font-semibold mb-3">{item?.name}</p>
                   <p className='mb-2 leading-8'>{item?.description}</p>
@@ -51,6 +71,12 @@ const Projects = () => {
               </div>
             )
         ))}
+        {generatePlaceHolders(PAGINATION_ITEMS_PER_PAGE - projectsList.length, <PlaceHolderItem />).map(e => e)}
+      </div>
+      <div className='mt-12 flex gap-4 justify-center'> 
+          {paginationList(PROJECTS.length)?.map((val:number) => (
+            <p key={val} className={` ${activePage === val ? 'bg-cerulean' : 'bg-verdigirls'} rounded-sm min-w-7 py-1 text-center px-1 hover:cursor-pointer font-medium`} onClick={() => handleUpdatePagination(val)}>{val + 1}</p>
+          ))}
       </div>
     </section>
   )

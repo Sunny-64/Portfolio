@@ -13,8 +13,8 @@ const Hero = () => {
           <p>I&prime;m skilled at making websites look awesome and ensuring they run smoothly, both on the surface and behind the scenes.</p>
         </div>
         <div className='flex gap-4 mt-8'>
-          <button className='bg-gradient-to-br from-cerulean to-verdigirls px-4 py-2 rounded-sm shadow-sm font-medium'>Resume</button>
-          <button className='border-[2px] border-cerulean px-4 py-2 rounded-sm font-medium hvr-bounce-to-right'>Resume</button>
+          <a href='https://drive.google.com/file/d/1yibFiHssFYlRCB3CmXRaTZyb-GiHbGG7/view?usp=sharing' className='bg-gradient-to-br from-cerulean to-verdigirls px-4 py-2 rounded-sm shadow-sm font-medium' target='_blank'>Resume</a>
+          <a href='#projects' className='border-[2px] border-cerulean px-4 py-2 rounded-sm font-medium hvr-bounce-to-right'>Projects</a>
         </div> 
       </div>
       <div className='col-span-1 place-self-end xl:mt-12 my-8 md:mt-0'>
