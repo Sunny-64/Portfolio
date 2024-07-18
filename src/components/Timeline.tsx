@@ -13,13 +13,13 @@ const RenderTimelineData = ({ data }: { data: any }) => {
                         <div className={`w-[6px] h-10 bg-verdigirls mx-auto ${index === 0 && '-mt-1'}`}></div>
                         <div className="w-20 h-20 rounded-full flex flex-col items-center justify-center mx-auto">
                             <div className="font-semibold text-[12px] sm:text-sm text-gray-300 opacity-80">
-                                {item?.endDate}
+                                {item?.startDate}
                             </div>
                             <div className="font-medium my-1 text-[12px] sm:text-sm text-gray-300 opacity-80">
                                 |
                             </div>
                             <div className="font-semibold text-[12px] sm:text-sm text-gray-300 opacity-80">
-                                {item?.startDate}
+                                {item?.endDate}
                             </div>
                         </div>
                         <div className="w-[6px] h-10 bg-verdigirls mx-auto relative"></div>
@@ -64,13 +64,13 @@ const RenderTimelineData = ({ data }: { data: any }) => {
                         <div className={`w-[6px] h-10 bg-verdigirls mx-auto ${index === 0 && '-mt-1'}`}></div>
                         <div className="w-20 h-20 rounded-full flex flex-col items-center justify-center mx-auto">
                             <div className="font-semibold text-[12px] sm:text-sm text-gray-300 opacity-80">
-                                {item?.endDate}
+                                {item?.startDate}
                             </div>
                             <div className="font-medium my-1 text-[12px] sm:text-sm text-gray-300 opacity-80">
                                 |
                             </div>
                             <div className="font-semibold text-[12px] sm:text-sm text-gray-300 opacity-80">
-                                {item?.startDate}
+                                {item?.endDate}
                             </div>
                         </div>
                         <div className="w-[6px] h-10 bg-verdigirls mx-auto relative"></div>
