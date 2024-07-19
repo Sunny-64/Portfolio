@@ -5,13 +5,8 @@ import {
   FaTwitter,
 } from 'react-icons/fa'
 
-import {
-  GITHUB_URL,
-  LINKEDIN_URL,
-  TWITTER_URL,
-  MOBILE,
-  EMAIL
-} from '@/constants/contact'
+import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL, MOBILE, EMAIL } from '@/constants/contact'
+import Form from './Form'
 
 
 const Contact = () => {
@@ -19,12 +14,7 @@ const Contact = () => {
     <section id='contact' className='p-5'>
       <p className='text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-cerulean to-verdigirls text-transparent bg-clip-text'>Contact</p>
       <div className='md:grid md:grid-cols-2 mt-4 md:mt-12'>
-        <form action="" className='w-full lg:w-[80%] flex flex-col gap-4 md:p-2 lg:p-5'>
-          <input className='py-3 px-4 rounded-md focus:outline-none' type="text" name='fullName' placeholder='Full Name' />
-          <textarea className='py-3 px-4 rounded-md focus:outline-none' name="message" id="message" cols={30} rows={8} placeholder='Message...'></textarea>
-          <button type="submit" className='bg-gradient-to-r from-cerulean to-verdigirls font-medium w-32 py-2 rounded-sm'>Send</button>
-        </form>
-
+        <Form />
         <div className='md:w-[85%] justify-self-end mt-8 md:mt-0'>
           <div className='flex gap-4'>
             <a href={GITHUB_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaGithub size={30} /></a>

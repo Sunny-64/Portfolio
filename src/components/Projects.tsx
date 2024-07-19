@@ -1,9 +1,7 @@
 'use client'
 import Image from 'next/image'
-import React, { ReactNode, useCallback, useEffect, useState } from 'react'
-import {
-  FaGithub,
-} from 'react-icons/fa'
+import React, {useEffect, useState } from 'react'
+import {FaGithub} from 'react-icons/fa'
 
 import { PROJECTS } from '@/constants/constants';
 import { IProject } from '@/types';
@@ -69,7 +67,7 @@ const Projects = () => {
         {Array.from(Array(PAGINATION_ITEMS_PER_PAGE - projectsList.length), (e, i) => <PlaceHolder key={i} styles='md:w-3/4 xl:w-1/2 border-[3px]  border-transparent rounded-lg min-h-[300px]'/>)}
       </div>
       <div className='mt-12 flex gap-4 justify-center'> 
-          {paginationList(PROJECTS.length)?.map((val:number) => (
+          {PROJECTS.length > PAGINATION_ITEMS_PER_PAGE && paginationList(PROJECTS.length)?.map((val:number) => (
             <p key={val} className={` ${activePage === val ? ' bg-verdigirls' : 'bg-cerulean'} rounded-sm min-w-7 py-1 text-center px-1 hover:cursor-pointer font-medium`} onClick={() => handleUpdatePagination(val)}>{val + 1}</p>
           ))}
       </div>

@@ -82,20 +82,20 @@ export const PROJECTS : IProject [] = [
         github : 'https://github.com/Sunny-64/Journal-Project-using-PHP', 
         techStack : 'Php, html, css, js'
     }, 
-    {
-        name : 'Snappy Stories', 
-        imageUrl : '/assets/nft-marketplace.png', 
-        description : 'NFT Marketplace is a platform where you can mint your own NFT at efficient gas price. You can Sell or Auction the NFT. This project uses Metamask for the transactions.', 
-        url : 'https://nft-marketplace-ashy-xi.vercel.app/', 
-        github : 'https://github.com/Sunny-64/NFT-marketplace', 
-        techStack : 'Nodjes, Ejs, OAuth'
-    }, 
-    {
-        name : 'Secrets', 
-        imageUrl : '/assets/nft-marketplace.png', 
-        description : 'NFT Marketplace is a platform where you can mint your own NFT at efficient gas price. You can Sell or Auction the NFT. This project uses Metamask for the transactions.', 
-        url : 'https://nft-marketplace-ashy-xi.vercel.app/', 
-        github : 'https://github.com/Sunny-64/NFT-marketplace', 
-        techStack : 'Reactjs, Nodejs, MongoDB'
-    }, 
+    // {
+    //     name : 'Snappy Stories', 
+    //     imageUrl : '/assets/nft-marketplace.png', 
+    //     description : 'NFT Marketplace is a platform where you can mint your own NFT at efficient gas price. You can Sell or Auction the NFT. This project uses Metamask for the transactions.', 
+    //     url : 'https://nft-marketplace-ashy-xi.vercel.app/', 
+    //     github : 'https://github.com/Sunny-64/NFT-marketplace', 
+    //     techStack : 'Nodjes, Ejs, OAuth'
+    // }, 
+    // {
+    //     name : 'Secrets', 
+    //     imageUrl : '/assets/nft-marketplace.png', 
+    //     description : 'NFT Marketplace is a platform where you can mint your own NFT at efficient gas price. You can Sell or Auction the NFT. This project uses Metamask for the transactions.', 
+    //     url : 'https://nft-marketplace-ashy-xi.vercel.app/', 
+    //     github : 'https://github.com/Sunny-64/NFT-marketplace', 
+    //     techStack : 'Reactjs, Nodejs, MongoDB'
+    // }, 
 ]
