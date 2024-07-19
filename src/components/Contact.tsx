@@ -16,7 +16,7 @@ const Contact = () => {
       <div className='md:grid md:grid-cols-2 mt-4 md:mt-12'>
         <Form />
         <div className='md:w-[85%] justify-self-end mt-8 md:mt-0'>
-          <div className='flex gap-4'>
+          <div className='flex gap-4 mt-8'>
             <a href={GITHUB_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaGithub size={30} /></a>
             <a href={LINKEDIN_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaLinkedin size={30} /></a>
             <a href={TWITTER_URL} target="_blank" className='rounded-full w-16 h-16 border-[2px] border-verdigirls hvr-radial-in flex justify-center items-center'><FaTwitter size={30} /></a>
