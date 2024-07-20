@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const PlaceHolder = ({styles} : {styles : string}) => {
-  return (
-    <div className={`${styles}`}></div>
-  )
-}
+const PlaceHolder = ({ styles }: { styles: string }) => {
+    return <div className={`${styles}`}></div>;
+};
 
-export default PlaceHolder
+export default PlaceHolder;

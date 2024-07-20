@@ -20,7 +20,8 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -40,8 +41,6 @@ input,
 textarea {
     background-color: #40798d4d;
 }
-
-
 
 .glassmorphism {
     background: rgba(255, 255, 255, 0.25);
@@ -82,11 +81,7 @@ textarea {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: linear-gradient(
-        to bottom right,
-        var(--cerulean),
-        var(--verdigirls)
-    );
+    background: linear-gradient(to bottom right, var(--cerulean), var(--verdigirls));
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -94,7 +89,7 @@ textarea {
 }
 
 .hvr-radial-in:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
@@ -140,7 +135,7 @@ textarea {
 }
 
 .hvr-bounce-to-right:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -10;
     top: 0;
@@ -190,7 +185,7 @@ textarea {
 }
 
 .hvr-bounce-to-left:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;

@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import skillsPng from "./../../assets/skills.png";
-import { Colon, Comma, EqualSign, LeftCurlyBracket, SingleQuote, SingleQuoteWrapper, SquareBracketWrapper, Tab, WhiteSpace } from "@/utils/SpecialCharacters";
+import React from 'react';
+import Image from 'next/image';
+import skillsPng from './../../assets/skills.png';
+import { Colon, Comma, EqualSign, LeftCurlyBracket, SingleQuote, SingleQuoteWrapper, SquareBracketWrapper, Tab, WhiteSpace } from '@/utils/SpecialCharacters';
 // import { test } from "@/constants/code";
-const SKILLS = ['Javascript', 'Typescript', 'Reactjs','MongoDb', 'SQL','ReactNative' ,'Docker','PostgreSQL','GraphQL' ,'Nodejs', 'Docker', 'Linux']
+const SKILLS = ['Javascript', 'Typescript', 'Reactjs', 'MongoDb', 'SQL', 'ReactNative', 'Docker', 'PostgreSQL', 'GraphQL', 'Nodejs', 'Docker', 'Linux'];
 
 const Template = () => {
     return (
@@ -14,7 +14,6 @@ const Template = () => {
                 <div className="h-3 w-3 rounded-full bg-gray-500"></div>
             </div>
             <div className="py-8 px-4 sm:px-8 opacity-90">
-
                 <code className="font-mono text-xs md:text-sm lg:text-base">
                     <div className="blink">
                         <span className="mr-2 text-purple-500">const</span>
@@ -76,24 +75,36 @@ const Template = () => {
                         <span className="text-cyan-400">{`(`}</span>
                     </div>
                     <div>
-                        <span className="ml-12 lg:ml-24 text-red-400">this<span className="text-white">.</span></span>
+                        <span className="ml-12 lg:ml-24 text-red-400">
+                            this<span className="text-white">.</span>
+                        </span>
                         <span className="mr-2 text-red-400">hardWorker</span>
                         <span className="text-cyan-400">&amp;&amp;</span>
                     </div>
                     <div>
-                        <span className="ml-12 lg:ml-24 text-red-400">this<span className="text-white">.</span></span>
+                        <span className="ml-12 lg:ml-24 text-red-400">
+                            this<span className="text-white">.</span>
+                        </span>
                         <span className="mr-2 text-red-400">problemSolver</span>
                         <span className="text-cyan-400">&amp;&amp;</span>
                     </div>
                     <div>
-                        <span className="ml-12 lg:ml-24 text-red-400">this<span className="text-white">.</span></span>
+                        <span className="ml-12 lg:ml-24 text-red-400">
+                            this<span className="text-white">.</span>
+                        </span>
                         <span className="mr-2 text-red-400">skills.length</span>
                         <span className="mr-2 text-cyan-400">&gt;=</span>
                         <span className="text-amber-400">5</span>
                     </div>
-                    <div><span className="ml-8 lg:ml-16 mr-2 text-cyan-400">{`);`}</span></div>
-                    <div><span className="ml-4 lg:ml-8 text-pink-400">{`};`}</span></div>
-                    <div><span className="text-yellow-400">{`};`}</span></div>
+                    <div>
+                        <span className="ml-8 lg:ml-16 mr-2 text-cyan-400">{`);`}</span>
+                    </div>
+                    <div>
+                        <span className="ml-4 lg:ml-8 text-pink-400">{`};`}</span>
+                    </div>
+                    <div>
+                        <span className="text-yellow-400">{`};`}</span>
+                    </div>
                 </code>
             </div>
         </div>
