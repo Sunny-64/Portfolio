@@ -20,6 +20,9 @@ const Navbar = () => {
                 <a href="#timeline" className="font-medium">
                     Timeline
                 </a>
+                <a href="#skills" className="font-medium">
+                    Skills
+                </a>
             </div>
             <p className="sm:hidden text-xl font-bold bg-gradient-to-r from-verdigirls to-cerulean text-transparent bg-clip-text">B Sunny</p>
 
@@ -50,6 +53,7 @@ const Navbar = () => {
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#timeline">Timeline</a>
+                <a href="#skills">Skills</a>
                 <a href="#contact" className="sm:flex border-[2px] border-verdigirls rounded-md px-4 py-1 hvr-bounce-to-left">
                     Contact
                 </a>
