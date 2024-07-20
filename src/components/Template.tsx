@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import skillsPng from './../../assets/skills.png';
-import { Colon, Comma, EqualSign, LeftCurlyBracket, SingleQuote, SingleQuoteWrapper, SquareBracketWrapper, Tab, WhiteSpace } from '@/utils/SpecialCharacters';
-// import { test } from "@/constants/code";
 const SKILLS = ['Javascript', 'Typescript', 'Reactjs', 'MongoDb', 'SQL', 'ReactNative', 'Docker', 'PostgreSQL', 'GraphQL', 'Nodejs', 'Docker', 'Linux'];
 
 const Template = () => {
