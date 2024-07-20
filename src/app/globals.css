@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-    --rich-black: #0B2027;
-    --cornsilk: #F6F1D1;
-    --ash-gray: #CFD7C7;
-    --verdigirls: #70A9A1;
-    --cerulean: #40798C;
+    --rich-black: #0b2027;
+    --cornsilk: #f6f1d1;
+    --ash-gray: #cfd7c7;
+    --verdigirls: #70a9a1;
+    --cerulean: #40798c;
 }
 
 * {
@@ -27,6 +27,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-width: 380px;
+    /* overflow-x: hidden; */
 }
 
 nav {
@@ -38,6 +39,15 @@ textarea {
     background-color: #40798d4d;
 }
 
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .hvr-wobble-bottom {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -45,8 +55,10 @@ textarea {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transform-origin: 100% 0;
     transform-origin: 100% 0;
-  }
-  .hvr-wobble-bottom:hover, .hvr-wobble-bottom:focus, .hvr-wobble-bottom:active {
+}
+.hvr-wobble-bottom:hover,
+.hvr-wobble-bottom:focus,
+.hvr-wobble-bottom:active {
     -webkit-animation-name: hvr-wobble-bottom;
     animation-name: hvr-wobble-bottom;
     -webkit-animation-duration: 1s;
@@ -55,7 +67,7 @@ textarea {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-  }
+}
 
 /* Hover Effects */
 
@@ -66,7 +78,11 @@ textarea {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to bottom right, var(--cerulean), var(--verdigirls));
+    background: linear-gradient(
+        to bottom right,
+        var(--cerulean),
+        var(--verdigirls)
+    );
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;

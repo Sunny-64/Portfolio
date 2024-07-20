@@ -4,8 +4,10 @@ import skillsPng from './../../assets/skills.png';
 
 const skills = () => {
   return (
-    <div> 
-      hell oworld
+    <div className='min-h-[500px] relative flex justify-center items-center'> 
+        <div>
+            
+        </div>
     </div>
   )
 }

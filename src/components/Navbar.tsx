@@ -17,7 +17,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   return (
-    <nav className="w-[90%] py-3 px-5 mx-auto my-5 rounded-md flex justify-between shadow-md items-center realtive ">
+    <nav className="w-[90%] py-3 px-5 mx-auto my-5 rounded-md flex justify-between shadow-md items-center relative">
       <div className='sm:flex gap-4 hidden'>
         <a href="#about" className='font-medium'>About</a>
         <a href="#projects" className='font-medium'>Projects</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
       </div>
-      <div className={`absolute flex flex-col gap-4 items-left sm:hidden top-[60px] transition-all ease-out duration-700 ${toggleMenu ? 'right-[12%]' : 'right-full'} bg-gradient-to-br from-rich-black to-cerulean rounded-md p-4 font-medium`}>
+      <div className={`absolute flex flex-col gap-4 items-left sm:hidden top-[60px] shadow-md transition-all ease-out duration-700 ${toggleMenu ? 'right-[10%]' : '-right-[100%]'} bg-gradient-to-br from-rich-black to-cerulean rounded-md p-4 font-medium`}>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#timeline">Timeline</a>
