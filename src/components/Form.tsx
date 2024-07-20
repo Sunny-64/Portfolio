@@ -1,15 +1,18 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema } from "@/utils/validations";
 import { createMessage } from "@/actions";
 import { IContact } from "@/models/contact.model";
 import { ToastContainer, toast } from 'react-toastify';
+import PulseLoader from "react-spinners/PulseLoader";
 import 'react-toastify/dist/ReactToastify.css';
+
 
 const Form = () => {
     const ref = useRef<HTMLFormElement>(null); 
+    const [loading, setLoading] = useState<boolean>(false); 
     const {
         control,
         handleSubmit,
@@ -29,12 +32,15 @@ const Form = () => {
             return; 
         }
         try{
+            setLoading(true); 
             await createMessage({email : data?.email, message : data?.message}); 
+            setLoading(false); 
             toast.success("Message Sent to Sunny!");
             reset(); 
         }
         catch(err){
-           return toast.error("Failed to Send Message. Please try again!");
+            setLoading(false); 
+            toast.error("Failed to Send Message. Please try again!");
         }
     }
     return (
@@ -89,10 +95,10 @@ const Form = () => {
 
             <button
                 type="submit"
-                className={`bg-gradient-to-r from-cerulean to-verdigirls font-medium w-32 py-2 rounded-sm mt-2 ${!isValid ? 'opacity-50' : 'cursor-pointer'}`}
-                disabled={!isValid}
+                className={`bg-gradient-to-r from-cerulean to-verdigirls font-medium w-32 py-2 rounded-sm mt-2 ${!isValid || loading ? 'opacity-50' : 'cursor-pointer'}`}
+                disabled={!isValid || loading}
             >
-                Send
+                {loading ? <PulseLoader size={10} color="#ffffff"/> :'Send'}
             </button>
         </form>
     );

@@ -38,7 +38,7 @@ const Contact = () => {
       </div>
 
       <div className='flex justify-center flex-col items-center'>
-        <hr className='mt-24 border-[1px] w-2/3 text-c border-verdigirls ' />
+        <hr className='mt-20 border-[1px] w-2/3 text-c border-verdigirls ' />
         <p className='mt-8'>Portfolio &copy;reated by Sunny</p>
       </div>
     </section>
