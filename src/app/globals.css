@@ -20,14 +20,16 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--rich-black);
     color: var(--cornsilk);
-    min-width: 360px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-width: 380px;
-    /* overflow-x: hidden; */
 }
 
 nav {
@@ -38,6 +40,8 @@ input,
 textarea {
     background-color: #40798d4d;
 }
+
+
 
 .glassmorphism {
     background: rgba(255, 255, 255, 0.25);

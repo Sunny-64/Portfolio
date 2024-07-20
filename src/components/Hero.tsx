@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Skills from './Skills';
+import Template from './Template';
 
 const Hero = () => {
   return (
@@ -18,9 +18,9 @@ const Hero = () => {
           <a href='#projects' className='border-[2px] border-cerulean px-4 py-2 rounded-sm font-medium hvr-bounce-to-right'>Projects</a>
         </div> 
       </div>
-      <div className='col-span-1 xl:mt-12 my-8 md:mt-0'>
-        {/* <Skills /> */}
-        <Image height={500} width={400} className='md:h-[full] w-full object-cover' src={'/assets/skills.png'} priority alt='skills' />
+      <div className='col-span-1 xl:mt-6 my-8 md:mt-0'>
+        <Template />
+        {/* <Image height={500} width={400} className='md:h-[full] w-full object-cover' src={'/assets/skills.png'} priority alt='skills' /> */}
       </div>
     </section>
   )
