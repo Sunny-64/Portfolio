@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from '@/constants/contact';
+import { LINKS } from '@/constants/innerLinks';
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState<boolean>(false);
@@ -11,18 +12,11 @@ const Navbar = () => {
     return (
         <nav className="w-[90%] py-3 px-5 mx-auto my-5 rounded-md flex justify-between shadow-md items-center relative">
             <div className="sm:flex gap-4 hidden">
-                <a href="#about" className="font-medium">
-                    About
-                </a>
-                <a href="#projects" className="font-medium">
-                    Projects
-                </a>
-                <a href="#timeline" className="font-medium">
-                    Timeline
-                </a>
-                <a href="#skills" className="font-medium">
-                    Skills
-                </a>
+                {LINKS.map((link, i) => (
+                    <a key={i} href={link.redirect} className="font-medium" onClick={() => setToggleMenu(false)}>
+                         {link.name}
+                    </a>
+                ))}
             </div>
             <p className="sm:hidden text-xl font-bold bg-gradient-to-r from-verdigirls to-cerulean text-transparent bg-clip-text">B Sunny</p>
 
@@ -39,7 +33,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                <a href="#contact" className="hidden sm:flex border-[2px] border-verdigirls rounded-md hvr-bounce-to-left px-4 py-1">
+                <a href="#contact" className="hidden sm:flex border-[2px] border-verdigirls rounded-md hvr-bounce-to-left px-4 py-1" onClick={() => setToggleMenu(false)}>
                     Contact
                 </a>
 
@@ -50,11 +44,10 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={`absolute flex flex-col gap-4 items-left sm:hidden top-[60px] shadow-md transition-all ease-out duration-700 ${toggleMenu ? 'right-[10%]' : '-right-[100%]'} bg-gradient-to-br from-rich-black to-cerulean rounded-md p-4 font-medium`}>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#timeline">Timeline</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact" className="sm:flex border-[2px] border-verdigirls rounded-md px-4 py-1 hvr-bounce-to-left">
+                {LINKS.map((link, i) => (
+                    <a key={i} href={link.redirect} onClick={() => setToggleMenu(false)}>{link.name}</a>
+                ))}
+                <a href="#contact" className="sm:flex border-[2px] border-verdigirls rounded-md px-4 py-1 hvr-bounce-to-left" onClick={() => setToggleMenu(false)}>
                     Contact
                 </a>
             </div>
