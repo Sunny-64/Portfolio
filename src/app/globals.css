@@ -20,11 +20,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
-
 body {
     background-color: var(--rich-black);
     color: var(--cornsilk);
@@ -42,13 +37,17 @@ textarea {
     background-color: #40798d4d;
 }
 
+.unset {
+    display: unset; 
+}
+
 .glassmorphism {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(16, 57, 78, 0.25);
     /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .hvr-wobble-bottom {

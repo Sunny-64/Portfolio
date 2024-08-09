@@ -1,8 +1,9 @@
 import { Navbar, Hero, About, Timeline, Projects, Contact, Skills } from "@/components";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Navbar />
             <Hero />
             <About />
@@ -10,6 +11,7 @@ export default function Home() {
             <Timeline />
             <Projects />
             <Contact />
-        </div>
+            <ScrollToTop />
+        </>
     );
 }
