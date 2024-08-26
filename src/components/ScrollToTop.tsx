@@ -1,6 +1,5 @@
 'use client'
 import useScroll from '@/utils/useScroll';
-import React, { useCallback, useEffect, useState } from 'react'
 import { IoArrowUpCircleSharp } from "react-icons/io5";
 
 const ScrollToTop = () => {

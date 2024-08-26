@@ -2,14 +2,11 @@
 
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-
 import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from '@/constants/contact';
 import { LINKS } from '@/constants/innerLinks';
-import useScroll from '@/utils/useScroll';
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-    const scrollPos = useScroll(); 
     return (
         <nav id='Navbar' className="w-[90%] py-3 px-5 mx-auto my-5 rounded-md shadow-md sticky top-1 z-50 glassmorphism">
             <div className='w-full relative flex justify-between items-center overflow-hidden'>
