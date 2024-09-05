@@ -42,7 +42,7 @@ const Navbar = () => {
                         <span className={`line w-[24px] bg-gradient-to-r from-cerulean to-verdigirls h-[3px] transition-all ease-out duration-700 ${toggleMenu && '-rotate-45 absolute top-[2px]'}`}></span>
                     </div>
                 </div>
-                <div className={`!z-40 absolute flex flex-col gap-4 items-left sm:hidden top-[60px] shadow-md transition-all ease-out duration-700 ${toggleMenu ? 'right-[10%]' : '-right-[100%]'} bg-gradient-to-br from-rich-black to-cerulean rounded-md p-4 font-medium`}>
+                <div className={`!z-40 absolute flex flex-col gap-4 items-left sm:hidden top-[60px] shadow-md transition-all ease-out duration-700 ${toggleMenu ? 'right-0' : '-right-[100%]'} bg-gradient-to-br from-rich-black to-cerulean rounded-md p-4 font-medium`}>
                     {LINKS.map((link, i) => (
                         <a key={i} href={link.redirect} onClick={() => setToggleMenu(false)}>
                             {link.name}
