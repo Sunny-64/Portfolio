@@ -32,6 +32,14 @@ export const EDUCATION : IEducation[] = [
 
 export const EXPERIENCE : IExperience [] = [
     {
+        company: 'Aeria',
+        startDate: 'July 2024',
+        endDate: 'Current',
+        experienceType: 'Internship',
+        description: `I'm Currently Working as a Full stack Developer at Aeria. My Day to day tasks involves Writing Api's on the backend and making sure they work well and Integerating them on the Frontend.`,
+        profile: 'Full Stack Developer',
+    },
+    {
         company: 'Qservices',
         startDate: 'April 2023',
         endDate: 'Nov 2023',
