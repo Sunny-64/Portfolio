@@ -6,12 +6,15 @@ import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from '@/constants/contact';
 import { LINKS } from '@/constants/innerLinks';
 import useDetectClickOutside from '@/hooks/useDetectClickOutside';
 import useDetectScroll from '@/hooks/useDetectScroll';
+import { useScroll } from '@/hooks';
 
 const Navbar = () => {
     const ref = useRef(null);
     const [toggleMenu, setToggleMenu] = useState<boolean>(false);
     useDetectClickOutside(ref, () => setToggleMenu(false));
     useDetectScroll(ref, () => setToggleMenu(false));
+    const scrollPos = useScroll();
+    console.log({ scrollPos });
     return (
         <>
             <nav id="Navbar" className="w-[90%] py-3 px-5 mx-auto my-5 rounded-md shadow-md sticky top-1 z-50 glassmorphism">
@@ -51,7 +54,7 @@ const Navbar = () => {
                 </div>
             </nav>
             <div className="w-full relative overflow-x-clip">
-                <div className={`flex flex-col gap-4 items-left p-4 font-medium shadow-md bg-gradient-to-br from-rich-black to-cerulean rounded-md fixed z-30 transition-all ease-in-out duration-700 top-16  ${toggleMenu ? 'right-10' : '-right-full'}`} ref={ref}>
+                <div className={`flex flex-col gap-4 items-left p-4 font-medium shadow-md bg-gradient-to-br from-rich-black to-cerulean rounded-md fixed z-30 transition-all ease-in-out duration-700 ${scrollPos > 20 ? 'top-16' : 'top-20'}  ${toggleMenu ? 'right-10' : '-right-full'}`} ref={ref}>
                     {LINKS.map((link, i) => (
                         <a key={i} href={link.redirect} onClick={() => setToggleMenu(false)}>
                             {link.name}

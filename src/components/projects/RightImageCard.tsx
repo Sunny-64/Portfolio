@@ -21,7 +21,7 @@ const RightImageCard = ({item} : {item : IProject}) => {
                 </div>
             </div>
             <div className="sm:col-span-1">
-                <Image height={500} width={500} className="h-full w-full object-cover rounded-r-lg" src={item?.imageUrl} alt="img" />
+                <Image height={500} width={500} className="h-full w-full object-cover rounded-t-lg sm:rounded-r-lg" src={item?.imageUrl} alt="img" />
             </div>
         </div>
     );

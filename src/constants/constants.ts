@@ -112,6 +112,6 @@ export const PROJECTS : IProject [] = [
         description : 'This analog clock project is built using HTML, CSS, and JavaScript. It features real-time movement of hour, minute, and second hands.', 
         url : 'https://sunny-64.github.io/100-Days-Of-Web-Development/Analog%20Clock/index.html', 
         github : 'https://github.com/Sunny-64/100-Days-Of-Web-Development/tree/main/Analog%20Clock', 
-        techStack : 'HTML, CSS, Bootstrap, Javascript, Nodejs, MongoDB'
+        techStack : 'HTML, CSS, Javascript'
     }, 
 ]
