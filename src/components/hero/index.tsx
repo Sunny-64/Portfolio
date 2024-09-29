@@ -4,7 +4,7 @@ import Template from './Template';
 
 const Hero = () => {
     return (
-        <section id="hero" className="w-[90%] mx-auto p-5 md:grid md:grid-cols-2 gap-4">
+        <section id="hero" className="w-[90%] mx-auto p-5 md:grid md:grid-cols-2 gap-4 min-h-[85vh]">
             <div className="col-span-1 self-center lg:pr-8">
                 <div className="mb-3">
                     <h2 className="font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl md:mb-2">
@@ -24,9 +24,8 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
-            <div className="col-span-1 xl:mt-6 my-8 md:mt-0">
+            <div className="col-span-1 xl:mt-6 my-8 md:mt-0 self-center">
                 <Template />
-                {/* <Image height={500} width={400} className='md:h-[full] w-full object-cover' src={'/assets/skills.png'} priority alt='skills' /> */}
             </div>
         </section>
     );

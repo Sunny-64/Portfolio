@@ -6,7 +6,7 @@ import Form from './Form';
 
 const Contact = () => {
     return (
-        <section id="contact" className="p-5">
+        <section id="contact" className="p-5 min-h-[90vh]">
             <p className="text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-cerulean to-verdigirls text-transparent bg-clip-text">Contact</p>
             <div className="md:grid md:grid-cols-2 mt-4 md:mt-12">
                 <Form />
